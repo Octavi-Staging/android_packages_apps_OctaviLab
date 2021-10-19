@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2015 Nitrogen OS
+<!-- Copyright (C) 2025 OctaviOS
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -15,47 +15,7 @@
 -->
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
-    android:title="@string/volume_title">
-
-     <PreferenceCategory
-        android:key="volume_category"
-        android:title="@string/volume_category">
-
-        <Preference
-            android:key="vol_steps"
-            android:title="@string/volume_steps_fragment_title"
-            android:summary="@string/volume_steps_summary"
-            android:fragment="com.octavi.lab.fragments.VolumeStepsFragment" />
-
-        <com.octavi.lab.preferences.SystemSettingSwitchPreference
-        android:key="volume_button_music_control"
-        android:summary="@string/volume_rocker_music_controls_summary"
-        android:title="@string/volume_rocker_music_controls_title"
-        android:defaultValue="false"
-        android:dependency="volume_rocker_wake" />
-
-        <com.octavi.lab.preferences.SystemSettingSwitchPreference
-        android:key="swap_volume_buttons"
-        android:title="@string/swap_volume_buttons_title"
-        android:summary="@string/swap_volume_buttons_summary"
-        android:defaultValue="false" />
-
-        <com.octavi.lab.preferences.SystemSettingSwitchPreference
-        android:key="volume_rocker_wake"
-        android:summary="@string/volume_rocker_wake_summary"
-        android:title="@string/volume_rocker_wake_title"
-        android:defaultValue="false"
-        android:disableDependentsState="true" />
-
-        <com.octavi.lab.preferences.SystemSettingListPreference
-        android:key="volume_key_cursor_control"
-        android:summary="%s"
-        android:title="@string/volume_key_cursor_control_title"
-        android:dialogTitle="@string/volume_key_cursor_control_title"
-        android:entries="@array/volume_key_cursor_control_entries"
-        android:entryValues="@array/volume_key_cursor_control_values"
-        android:defaultValue="0" />
-    </PreferenceCategory>
+    android:title="@string/volume_title"
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
 </PreferenceScreen>

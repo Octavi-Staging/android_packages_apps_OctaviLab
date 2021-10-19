@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2016 Nitrogen Project
+<!-- Copyright (C) 2025 OctaviOS
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -14,37 +14,8 @@
      limitations under the License.
 -->
 <PreferenceScreen
-        xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android="http://schemas.android.com/apk/res/android"
 	android:title="@string/misc_title"
-        xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
-        <com.octavi.lab.preferences.SystemSettingSwitchPreference
-            android:key="toast_icon"
-            android:title="@string/toast_icon_title"
-            android:summary="@string/toast_icon_summary"
-            android:defaultValue="false" />
-
-        <com.octavi.lab.preferences.SystemSettingSwitchPreference
-            android:key="data_disabled_icon"
-            android:title="@string/data_disabled_icon_title"
-            android:summary="@string/data_disabled_icon_summary"
-            android:defaultValue="true"/>
-
-        <com.octavi.lab.preferences.SystemSettingSwitchPreference
-            android:key="roaming_indicator_icon"
-            android:title="@string/roaming_indicator_icon_title"
-            android:summary="@string/roaming_indicator_icon_summary"
-            android:defaultValue="true"/>
-
-        <com.octavi.lab.preferences.SystemSettingSwitchPreference
-            android:key="use_old_mobiletype"
-            android:title="@string/use_old_mobiletype_title"
-            android:summary="@string/use_old_mobiletype_summary"
-            android:defaultValue="false" />
-
-        <com.octavi.lab.preferences.SecureSettingSwitchPreference
-            android:key="hide_qs_call_strength"
-            android:title="@string/show_qs_call_strength_icon_title"
-            android:summary="@string/show_qs_call_strength_icon_summary"
-            android:defaultValue="true" />
 </PreferenceScreen>

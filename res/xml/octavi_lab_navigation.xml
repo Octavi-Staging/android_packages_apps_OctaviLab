@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2016 Nitrogen Project
+<!-- Copyright (C) 2025 OctaviOS
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -13,32 +13,9 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<PreferenceScreen
-        xmlns:android="http://schemas.android.com/apk/res/android"
-	android:title="@string/navbar_title"
-        xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
-        <SwitchPreference
-        android:key="force_show_navbar"
-        android:title="@string/navigation_bar_title"
-        android:summary="@string/navigation_bar_summary" />
-
-        <Preference
-        android:key="layout_settings"
-        android:title="@string/navigation_bar_layout_title"
-        android:summary="@string/navigation_bar_layout_summary"
-        android:dependency="force_show_navbar">
-        <intent android:action="android.intent.action.MAIN"
-            android:targetPackage="com.android.systemui"
-            android:targetClass="com.android.systemui.tuner.NavbarActivity" />
-        </Preference>
-
-        <com.octavi.lab.preferences.SystemSettingSwitchPreference
-        android:key="navigation_bar_menu_arrow_keys"
-        android:title="@string/navigation_bar_arrow_keys_title"
-        android:summary="@string/navigation_bar_arrow_keys_summary"
-        android:dependency="force_show_navbar"
-        android:defaultValue="false" />
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="@string/navbar_title"
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings" >
 
 </PreferenceScreen>
-

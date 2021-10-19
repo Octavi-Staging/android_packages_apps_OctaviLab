@@ -21,31 +21,28 @@ import androidx.preference.SwitchPreference;
 import android.provider.Settings;
 import com.android.settings.R;
 
-import com.octavi.lab.preferences.CustomSeekBarPreference;
-
 import java.util.Arrays;
 import java.util.HashSet;
 
 import com.android.settings.SettingsPreferenceFragment;
 
-public class MiscSettings extends SettingsPreferenceFragment implements
-        OnPreferenceChangeListener {
+public class MiscSettings extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
 
     @Override
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
 
-        ContentResolver resolver = getActivity().getContentResolver();
         addPreferencesFromResource(R.xml.octavi_lab_misc);
 
     }
 
     @Override
-    public boolean onPreferenceChange(Preference preference, Object newValue) {
-        ContentResolver resolver = getActivity().getContentResolver();
+    public boolean onPreferenceChange(Preference preference, Object objValue) {
+
         return false;
     }
 
+    @Override
     public int getMetricsCategory() {
         return MetricsProto.MetricsEvent.OCTAVI;
     }

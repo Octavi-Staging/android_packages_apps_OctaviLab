@@ -18,14 +18,10 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/octavi_lab_title" >
 
-        <!-- Status Bar -->
-	<Preference
-	    android:layout="@layout/cardview"
-            android:summary="@string/statusbar_summary"
-	    android:key="statusbar_category"
-            android:title="@string/statusbar_title"
-            android:fragment="com.octavi.lab.fragments.StatusBarSettings" 
-            android:icon="@drawable/statusbar"/>
+        <com.android.settingslib.widget.LayoutPreference 
+            android:layout="@layout/octavi_homepage_header" 
+            android:selectable="false" 
+            android:key="octavi_homepage_header"/>
 
         <!-- QuickSettings -->
         <Preference
@@ -35,15 +31,6 @@
             android:title="@string/quicksettings_title"
             android:fragment="com.octavi.lab.fragments.QuickSettings"
             android:icon="@drawable/qspanel"/>
-
-        <!-- Notification -->
-        <Preference
-            android:layout="@layout/cardview"
-            android:summary="@string/notif_summary"
-            android:key="notifications_category"
-            android:title="@string/notifications_title"
-            android:fragment="com.octavi.lab.fragments.NotificationSettings"
-            android:icon="@drawable/notif"/>
 
         <!-- Themes -->
         <Preference
@@ -98,15 +85,6 @@
             android:title="@string/lockscreen_title"
             android:fragment="com.octavi.lab.fragments.LockScreenSettings"
             android:icon="@drawable/uituner"/>
-
-        <!-- Visualizer -->
-        <Preference
-            android:layout="@layout/cardview"
-            android:summary="@string/visual_summary"
-            android:key="visualiser_category"
-            android:title="@string/visualiser_title"
-            android:fragment="com.octavi.lab.fragments.Visualizer"
-            android:icon="@drawable/visual"/>
 
         <!-- Misc -->
         <Preference
