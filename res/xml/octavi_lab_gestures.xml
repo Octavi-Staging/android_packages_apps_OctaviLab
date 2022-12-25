@@ -36,5 +36,11 @@
             android:key="doze_trigger_doubletap"
             android:title="@string/doze_double_tap_title"
             android:defaultValue="false" />
+
+        <com.octavi.lab.preferences.SecureSettingSwitchPreference
+            android:key="doze_pulse_on_double_tap"
+            android:title="@string/double_tap_on_doze_to_wake_title"
+            android:summary="@string/double_tap_on_doze_to_wake_summary"
+            android:defaultValue="true" />
     </PreferenceCategory>
 </PreferenceScreen>
