@@ -55,6 +55,12 @@
         android:defaultValue="false" />
 
     <Preference
+            android:key="lockscreen_shortcuts"
+            android:title="@string/lockscreen_shortcuts"
+            android:summary="@string/lockscreen_shortcuts_summary"
+            android:fragment="com.octavi.lab.fragments.LockscreenShortcuts" />
+
+    <Preference
         android:key="android.theme.customization.lockscreen_clock_font"
         android:title="@string/theme_customization_lock_clock_title"
         android:summary="@string/theme_customization_lock_clock_summary"
