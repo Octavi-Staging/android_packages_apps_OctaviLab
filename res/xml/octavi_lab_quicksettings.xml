@@ -42,6 +42,12 @@
             android:summary="@string/show_squiggle_animation_summary"
             android:defaultValue="true" />
 
+    <Preference
+            android:key="qs_tile_layout"
+            android:title="@string/qs_tile_layout_title"
+            android:summary="@string/qs_tile_layout_summary"
+            android:fragment="com.octavi.lab.fragments.QsTileLayoutSettings" />
+
         <!-- Battery styles -->
         <com.octavi.lab.preferences.SystemSettingListPreference
             android:key="qs_battery_style"
