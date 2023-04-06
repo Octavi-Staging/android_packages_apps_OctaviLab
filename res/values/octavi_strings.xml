@@ -340,6 +340,9 @@
     <string name="unit_pixels" translatable="false">dp</string>
     <string name="kg_custom_clock_color_enabled_title">Custom lockscreen clock color</string>
     <string name="kg_custom_clock_color_title">Clock color</string>
+    <string name="clock_use_single_line_title">Custom clock format</string>
+    <string name="single_line">Single-line</string>
+    <string name="double_line">Double-line</string>
 
     <!-- Fonts -->
     <string name="theme_customization_lock_clock_title">Lockscreen clock font</string>
