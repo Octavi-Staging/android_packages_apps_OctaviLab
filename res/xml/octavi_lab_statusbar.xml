@@ -82,6 +82,12 @@
          android:summary="@string/statusbar_icons_style_summary"
          android:defaultValue="false" />
 
+    <com.octavi.lab.preferences.SecureSettingSwitchPreference
+         android:key="show_wifi_standard_icon"
+         android:title="@string/show_wifi_standard_icon_title"
+         android:summary="@string/show_wifi_standard_icon_summary"
+         android:defaultValue="false" />
+
     <!-- Status bar battery customizations -->
     <PreferenceCategory
         android:title="@string/status_bar_battery_category_title">
