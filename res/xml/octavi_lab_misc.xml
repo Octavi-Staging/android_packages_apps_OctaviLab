@@ -47,7 +47,7 @@
         android:title="@string/use_photos_spoof_title"
         android:summary="@string/use_photos_spoof_summary"
         android:defaultValue="true" />
-     
+
      </PreferenceCategory>
 
 </PreferenceScreen>
