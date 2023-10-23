@@ -24,4 +24,30 @@
               android:summary="@string/ignore_window_secure_summary"
               android:defaultValue="false"/>
 
+     <PreferenceCategory
+        android:title="@string/misc_spoof_category" >
+
+    <!-- Unlock FPS for specific games -->
+    <com.octavi.lab.preferences.SystemPropertySwitchPreference
+        android:key="persist.sys.pixelprops.games"
+        android:title="@string/use_games_spoof_title"
+        android:summary="@string/use_games_spoof_summary"
+        android:defaultValue="false" />
+
+    <!--Netflix -->
+    <com.octavi.lab.preferences.SystemPropertySwitchPreference
+        android:key="persist.sys.spoof_netflix"
+        android:title="@string/netflix_spoof_title"
+        android:summary="@string/netflix_spoof_summary"
+        android:defaultValue="false" />
+
+    <!-- Unlimited google photos storage -->
+    <com.octavi.lab.preferences.SystemPropertySwitchPreference
+        android:key="persist.sys.pixelprops.gphotos"
+        android:title="@string/use_photos_spoof_title"
+        android:summary="@string/use_photos_spoof_summary"
+        android:defaultValue="true" />
+     
+     </PreferenceCategory>
+
 </PreferenceScreen>
